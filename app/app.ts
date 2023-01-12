@@ -1,7 +1,7 @@
 // import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
-import express from 'express'
-const app = express()
-import serverless from 'serverless-http'
+import express from 'express';
+const app = express();
+import serverless from 'serverless-http';
 
 /**
  *
@@ -35,12 +35,12 @@ import serverless from 'serverless-http'
 //     return response;
 // };
 
-app.get('/express',(req,res)=>{
-    res.send('Hello Typescript World Again and Again')
-})
+app.get('/express', (req, res) => {
+    res.send('Hello Typescript World Again and Again');
+});
 
-app.listen(5000,()=>{
-    console.log(`Listening on PORT 5000`)
-})
+app.listen(5000, () => {
+    console.log(`Listening on PORT 5000`);
+});
 
-export const handler = serverless(app)
+export const handler = serverless(app);
